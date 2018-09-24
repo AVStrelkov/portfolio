@@ -15,6 +15,7 @@ body {
   overflow: hidden;
   min-height: 100%;
   position: relative;
+  @include font(r-regular);
 }
 
 .container {

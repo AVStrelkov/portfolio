@@ -1,6 +1,37 @@
 extends ../auth.layout.pug
 
 block content
-  .hello-world
-    +icon('check', 'hello-world__block')
-    .inlined-svg
+  .hello
+    a(href="#").autoriz_btn Авторизоваться
+    .content
+      .user
+        .user__item
+          .user__list
+            img(src="./assets/images/user.jpg", alt="logo").user__pic
+            .user__name Александр Стрелков
+            .user__text Личный сайт веб разработчика
+        .user__social
+          .social
+            ul.social__item
+              li.social__list
+                a(href="#").social__link
+                  svg.social__svg
+                    use(xlink:href="./assets/images/icons/sprite.svg#vk")
+              li.social__list
+                a(href="#").social__link
+                  svg.social__svg
+                    use(xlink:href="./assets/images/icons/sprite.svg#github")
+              li.social__list
+                a(href="#").social__link
+                  svg.social__svg
+                    use(xlink:href="./assets/images/icons/sprite.svg#in")
+      .btn
+        ul.nav
+          li.nav__list
+            a(href="#").nav__link Мои работы
+          li.nav__list
+            a(href="#").nav__link Обо мне
+          li.nav__list
+            a(href="#").nav__link Блог
+    .copy © Александр Стрелков | создано с любовью в LoftSchool | 2018
+
